@@ -1,0 +1,85 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+  <body>
+    <p>Let's mangle some numbers! Enter five numbers below to add and average them.</p>
+    <button onclick="additionFunction() ;averageFunction(); $inputFields();">Mangle</button>
+      <br>
+      <br>
+      <input type="button" value="Reset" onClick="window.location.reload()">
+    <br>
+    <br>
+    Enter a number:
+        <div class="inputClass">
+            <input type="text" id="txt1" name="text1">
+        </div>
+    <br>
+    Enter a number:
+        <div class="inputClass">
+            <input type="text" id="txt2" name="text2">
+        </div>
+    <br>
+    Enter a number:
+        <div class="inputClass">
+            <input type="text" id="txt3" name="text3">
+        </div>
+    <br>
+    Enter a number:
+        <div class="inputClass">
+            <input type="text" id="txt4" name="text4">
+              </div>
+    <br>
+    Enter a number:
+        <div class="inputClass">
+            <input type="text" id="txt5" name="text5">
+        </div>
+
+    <br>
+    <br>
+      The sum of the numbers is:
+    <p id="additionOutput"></p>
+    <script>
+      function additionFunction() {
+        var a = document.getElementById("txt1").value;
+        var b = document.getElementById("txt2").value;
+          var c = document.getElementById("txt3").value;
+          var d = document.getElementById("txt4").value;
+          var e = document.getElementById("txt5").value;
+
+        var x = +a + +b + +c + +d + +e;
+        document.getElementById("additionOutput").innerHTML = x;
+      }
+    </script>
+      <br>
+      <br>
+      The average of the numbers is:
+          <p id="averageOutput"></p>
+    <script>
+      function averageFunction() {
+        var a = document.getElementById("txt1").value;
+        var b = document.getElementById("txt2").value;
+          var c = document.getElementById("txt3").value;
+          var d = document.getElementById("txt4").value;
+          var e = document.getElementById("txt5").value;
+
+        var y = ((+a + +b + +c + +d + +e)/5);
+        document.getElementById("averageOutput").innerHTML = y;
+      }
+    </script>
+      <br>
+      <br>
+      The quantity of the entered numbers is:
+      <p id="numbercompletedFields"></p>
+      <script>
+    function $inputFields() {
+    var items = 0;
+    $.each($inputFields, function($field) {
+      if ($inputFields[$field].value.length > 0) { ++items; }
+    }); 
+        document.getElementById("numbercompletedFields").innerHTML = items;
+    }
+      </script>
+
+  </body>
+</html>
