@@ -1,0 +1,169 @@
+html { 
+  font-family: 'Droid', sans-serif;
+  font-size: .9em;
+} 
+
+body {
+  margin-top: .5rem; 
+}
+
+h1 {
+  font-size: 3rem;
+    width: 60%;
+  line-height: 3.1rem;
+  color: #BF4033;
+  opacity: .9;
+  
+}
+
+h2 {
+    width: 60%;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: black;
+  padding: .5rem;
+  opacity: .9;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  padding: .5rem;
+  color: black;
+  opacity: .9;
+}
+
+border-collapse: collapse;
+
+#addedsites {
+    border: 1px solid black;
+ 
+}
+
+#addedsitestr {
+    border: 1px solid black;
+   
+}
+#sitenametd {
+    border: 1px solid black;
+   
+}
+#sitedesctd {
+    border: 1px solid black;
+   
+}
+#urltd {
+    border: 1px solid black;
+   
+}
+
+#add {
+    background-color: green;
+    border: none;
+    color: white;
+     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+#enteranother {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+#deleterow {
+    background-color: #BF4033;
+    border: none;
+    color: white;
+     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+#reload {
+    background-color: #BF4033;
+    border: none;
+    color: white;
+     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+input[type=text] {
+    width: 500px;
+    padding: 5px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+#inputform {
+    background-color: aliceblue;
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#listofsites {
+    background-color: aliceblue;
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+p {
+  font-family: 'Droid', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #BF4033;
+  opacity: .9;
+}
+
+a:link {
+  text-decoration: none;
+  color: #BF4033;
+  
+}
+
+a:visited {
+    text-decoration: none;
+    color: #BF4033;
+
+}
+
+a:hover {
+  color: #1469CC;
+  text-decoration: none;
+}
+
+img { 
+  clear:both;
+  width: 100%;
+  padding: .5rem 0 .5rem .5rem;
+
+}
+
+
+i {
+  color: #BF4033;
+  
+}
+
