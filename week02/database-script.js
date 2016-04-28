@@ -19,6 +19,11 @@ function hidePageElement(what)  {
     return false;  
 } 
 
+
+function hideListOfSites() {
+  hidePageElement(document.getElementById('listofsites'))
+}
+
 function hideInputForm() {
   hidePageElement(document.getElementById('inputform'))
 }
