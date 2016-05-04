@@ -2,22 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-       <link rel="stylesheet" type="text/css" href="style.css">
-    <title>week 3</title>
+    <title>HTML5 APIs: Assignment 3 Solution</title>
   </head>
   <body>
-    <h1>Number Form</h1>
+
+    <h1>Numbers and Strings</h1>
+
     <form>
-      <textarea id="the-number" rows="4" cols="50">
-    
-      </textarea>
-      <br>
-      <br>
+      <label>Enter numbers or text: <br/>
+        <textarea id="user-input" rows="5" cols="50"></textarea>
+      </label> <br/>
       <button type="submit" id="submit">Submit</button>
       <button type="button" id="reset">Reset</button>
       <div id="message"></div>
     </form>
 
+    <h2>The Numbers</h2>
     <table>
       <tr>
         <td>Count</td>
@@ -31,16 +31,24 @@
         <td>Average</td>
         <td id="average"></td>
       </tr>
-        <tr>
-        <td>Text</td>
-        <td id="text"></td>
-      </tr>
+    </table>
+
+    <h2>The Strings</h2>
+    <strong>Concatenated:</strong><br/>
+    <div id="concatenation"></div>
+    <table>
+      <thead>
+        <th>Word</th>
+        <th>Count</th>
+      </thead>
+      <tbody id="word-counts">
+      </tbody>
     </table>
 
     <script
 			  src="https://code.jquery.com/jquery-2.2.3.js"
 			  integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="
 			  crossorigin="anonymous"></script>
-    <script src="ArrayStats.js"></script>
+    <script src="NumbersAndStrings.js"></script>
   </body>
 </html>
