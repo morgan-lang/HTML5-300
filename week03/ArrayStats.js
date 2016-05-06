@@ -20,6 +20,7 @@
 (function() {
 'use strict';
 //=============================================================================
+var textinput = [];
 var numbers = [];
 var count = 0;
 var sum = 0;
@@ -37,8 +38,8 @@ function processForm( evt ) {
     var val = $('#the-number').val();
     var num = parseFloat( val );
   
-    if ( isNaN( numbers ) ) {
-        processText ( );
+    if (num == isNaN) {
+        processText (textinput);
     } 
   
     else {
@@ -50,8 +51,8 @@ function processForm( evt ) {
 //=============================================================================
 
   function processText( ) {
-    var enteredText = document.getElementById("#the-number").value;
-    document.getElementById("text").innerHTML = ( enteredText );
+    var enteredText = document.getElementById("text");
+    enteredText.innerHTML = ( val );
   }
     
 function processNumber( number ) {
@@ -103,6 +104,7 @@ function DisplayStats( ) {
 //=============================================================================
 
 function reset( ) {
+    textinput = [];
     numbers = [];
     ComputeStats( );
     DisplayStats( );
