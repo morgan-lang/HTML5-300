@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {width:350px;height:350px;padding:10px;border:1px solid #aaaaaa;}
+</style>
+ <script src="./js/interact.js"></script> 
+</head>
+<body>
+
+<p>Drag the cat into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="./images/kitten.jpg" draggable="true" ondragstart="drag(event)" width="324" height="324">
+
+</body>
+</html>

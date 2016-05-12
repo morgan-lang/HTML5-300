@@ -1,0 +1,21 @@
+
+
+#visualizer-panel .leftStuff {
+    float: left;
+}
+#visualizer-panel .rightStuff {
+    float: right;
+}
+
+#visualizer-panel .draggable:hover {
+    cursor: move;
+}
+
+/* Drag & Drop */
+#visualizer-panel .draggable {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+#visualizer-panel .drop-active { border-color: red; }
+#visualizer-panel .drag-drop.can-drop { background-color: #4e4; }
+#visualizer-panel .drop-target {  background-color: #29e;  }
