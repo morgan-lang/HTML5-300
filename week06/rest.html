@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="rest.css" />
+ </head>
+ <body>
+
+<table id="resttable">
+  <tr>
+    <td><h2>Control type</h2></td>
+    <td><h2>Control</h2></td>
+    <td><h2>Value entered</h2></td>
+  </tr>
+          
+          
+  <tr>
+    <td><h3>Text input</h3></td>
+      
+    <td><input type="text" name="message" id="text_input" onchange="showInput();"></td>
+    
+    <td><span id='text_output'></span></td>
+  </tr>
+    
+          
+  <tr>
+    <td><h3>Checkbox</h3></td>
+
+    <td><input type="checkbox" id="check_input" onchange="check();"></form>
+</td>
+    <td><span id='check_output'></span></td>
+  </tr>
+    
+    
+<tr>
+    <td><h3>Color selector</h3></td>
+      
+    <td><input type="color" id="color_input" value="#ffffff" autofocus onchange="showcolor();"></td>
+    
+    <td><span id='color_output'></span></td>
+</tr>
+    
+    
+<tr>
+    <td><h3>Range slider</h3></td>
+      
+    <td><input id="range_input" type="range" min="-100" max="100" step=".0001" onchange="showrange();"/></td>
+    
+    <td><span id='range_output'></span></td>
+</tr>
+          
+     
+<tr>
+    <td><h3>Dropdown selector</h3></td>
+      
+    <td><select id="select_input" onchange="showselect()">   
+        <option value="choice00">choice00</option>
+        <option value="choice01">choice01</option>
+        <option value="choice02">choice02</option>
+        <option value="choice03">choice03</option></td>
+    
+    <td><span id='select_output'></span></td>
+  </tr>
+     
+    
+</table> 
+
+<table id="reset_table">
+    <tr><td><h2>Reset all</h2><input type="reset" value="Reset" onClick="window.location.reload()"></td></tr>
+
+</table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="rest.js"></script>
+</body>
+</html>

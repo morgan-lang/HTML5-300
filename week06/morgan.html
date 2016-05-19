@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+ <script src="morgan.js"></script> 
+ <link type="text/css" rel="stylesheet" href="morgan.css" />
+ </head>
+ <body>
+     <h1>All commands output to console</h1>
+     
+     
+          <div>
+                 <form id="getcurrentrecords">
+              <button type="button" id="create-submit" onclick="getcurrentrecords()">Get current records</button>
+                     
+            </form>
+         </div>
+     
+     
+     
+     
+     
+     <div>
+                 <form id="createrecordbynameage">
+              <label>Name:
+                <input type="text" id="create-name" />
+              </label>
+              <label>Age:
+                <input type="number" id="create-age" />
+              </label>
+              <button type="button" id="create-submit" onclick="createnameage()">Submit new record</button>
+                     
+            </form>
+         </div>
+     
+    
+     <div>
+                   <form id="getrecordbyid">
+                <label>ID:
+                  <input type="text" id="read-id" />
+                </label>
+                <button type="button" id="read-submit" onclick="getrecordbyid()">Get record by ID</button>
+                        
+              </form>
+     </div>
+     
+
+<div>
+    <form id="reset">
+    <input type="reset" value="Reset" onClick="window.location.reload()">
+        </form>
+</div>
+
+</body>
+</html>
