@@ -11,18 +11,21 @@
      <h1>All commands output to console</h1>
      
      
-          <div>
+          <div class="firstdiv">
                  <form id="getcurrentrecords">
               <button type="button" id="create-submit" onclick="getcurrentrecords()">Get current records</button>
+                     <p id="thisp">Output will appear here</p>
                      
             </form>
+              
          </div>
      
      
      
      
      
-     <div>
+     
+     <div class="seconddiv">
                  <form id="createrecordbynameage">
               <label>Name:
                 <input type="text" id="create-name" />
@@ -31,23 +34,24 @@
                 <input type="number" id="create-age" />
               </label>
               <button type="button" id="create-submit" onclick="createnameage()">Submit new record</button>
+                     <p id="thatp">Output will appear here</p>
                      
             </form>
          </div>
      
     
-     <div>
+     <div class="thirddiv">
                    <form id="getrecordbyid">
                 <label>ID:
                   <input type="text" id="read-id" />
                 </label>
                 <button type="button" id="read-submit" onclick="getrecordbyid()">Get record by ID</button>
-                        
+                      <p id="theotherp">Output will appear here</p>  
               </form>
      </div>
      
 
-<div>
+<div class="fourthdiv">
     <form id="reset">
     <input type="reset" value="Reset" onClick="window.location.reload()">
         </form>

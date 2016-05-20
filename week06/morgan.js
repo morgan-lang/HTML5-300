@@ -7,6 +7,7 @@ function getcurrentrecords() {
         method: 'GET',
         success: function logListResult( data ) {
             console.log( 'Data received:', data );
+           document.getElementById('thisp').innerHTML = ( 'Data received:', data );
         },
         error: logAjaxError
     } );
@@ -51,10 +52,12 @@ function getrecordbyid(){
 
 function logCreateResult( data ) {
     console.log( 'Data received:', data );
+    document.getElementById('thatp').innerHTML = ( 'Data received:', data );
 }
 
 function logReadResult( data ) {
     console.log( 'Data received:', data );
+    document.getElementById('theotherp').innerHTML = ( 'Data received:', data );
 }
 
 function logAjaxError( jqXHR, textStatus, errorThrown ) {
