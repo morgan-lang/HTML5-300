@@ -1,0 +1,40 @@
+html {
+    
+    font-family: sans-serif;
+}
+
+div, h1 {
+    background-color: lightgrey;
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+  #drag-div-01 {
+    width: 10%;
+    height: 10%;
+  }
+
+  #drag-div-02 {
+    width: 10%;
+    height: 10%;
+  }
+
+ #drag-div-03 {
+    width: 10%;
+    height: 10%;
+  }
+
+ #drag-div-04 {
+    width: 10%;
+    height: 10%;
+  }
+
+p {
+    
+   text-align: center;
+}
+  
+
+
+
