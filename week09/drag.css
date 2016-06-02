@@ -1,0 +1,15 @@
+html {
+    
+    font-family: sans-serif;
+}
+
+div {
+    background-color: lightgrey;
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 2px;
+}
+  
+
+
+

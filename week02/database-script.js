@@ -7,7 +7,7 @@ function addRow() {
   var row = table.insertRow(rowCount);
   row.insertCell(0).innerHTML= siteName.value;
   row.insertCell(1).innerHTML= siteDescription.value;
-  row.insertCell(2).innerHTML= siteURL.value;
+  row.insertCell(2).innerHTML= '<a href="'+siteURL.value + '">'+siteURL.value+'</a>';
 
 }
 

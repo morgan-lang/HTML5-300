@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Raphael</title>
+     <link type="text/css" rel="stylesheet" href="raphael.css" />
+    
+    
+</head>
+<body>
+    <script src="./raphael-master/raphael.js"></script>
+ 
+<div id="raphael-div1">
+    
+    <h2>similar overlapping colors:</h2>
+    <script>
+        //paper 1
+var paper1 = Raphael(100, 60, 300, 300);
+var circle1 = paper1.circle(150, 100, 50);
+circle1.attr("fill", "#ff9933");
+circle1.attr("stroke", "#000000");
+circle1.attr("opacity", ".8");
+
+//paper 2
+var paper2 = Raphael(190, 60, 300, 300);
+var circle2 = paper2.circle(150, 100, 50);
+circle2.attr("fill", "#ff6600");
+circle2.attr("stroke", "#000000");
+circle2.attr("opacity", ".8");
+
+//paper 3
+var paper3 = Raphael(270, 60, 300, 300);
+var circle3 = paper3.circle(150, 100, 50);
+circle3.attr("fill", "#ff5050");
+circle3.attr("stroke", "#000000");
+circle3.attr("opacity", ".8");
+
+//paper 4
+var paper4 = Raphael(340, 60, 300, 300);
+var circle4 = paper4.circle(150, 100, 50);
+circle4.attr("fill", "#cc0066");
+circle4.attr("stroke", "#000000");
+circle4.attr("opacity", ".8");
+
+//paper 5
+var paper5 = Raphael(400, 60, 300, 300);
+var circle5 = paper5.circle(150, 100, 50);
+circle5.attr("fill", "#990033");
+circle5.attr("stroke", "#000000");
+circle5.attr("opacity", ".8");
+
+//paper 6
+var paper6 = Raphael(447, 60, 300, 300);
+var circle6 = paper6.circle(150, 100, 50);
+circle6.attr("fill", "#660033");
+circle6.attr("stroke", "#000000");
+circle6.attr("opacity", ".8");
+    
+    </script>
+    
+    </div>  
+    
+    <div id="raphael-div2">
+    
+    <h2>dissimilar overlapping colors:</h2>
+    <script>
+//paper 7
+var paper7 = Raphael(100, 252, 300, 300);
+var circle7 = paper7.circle(150, 100, 50);
+circle7.attr("fill", "#009933");
+circle7.attr("stroke", "#000000");
+circle7.attr("opacity", ".8");
+
+//paper 8
+var paper8 = Raphael(190, 252, 300, 300);
+var circle8 = paper8.circle(150, 100, 50);
+circle8.attr("fill", "#ff99cc");
+circle8.attr("stroke", "#000000");
+circle8.attr("opacity", ".8");
+
+//paper 9
+var paper9 = Raphael(270, 252, 300, 300);
+var circle9 = paper9.circle(150, 100, 50);
+circle9.attr("fill", "#3333ff");
+circle9.attr("stroke", "#000000");
+circle9.attr("opacity", ".8");
+    
+    </script>
+    
+</div>
+    
+<div id="raphael-div3">
+<h2>animated overlapping divs:</h2>
+</div>
+            
+<div id="spinner10"></div>
+<script>
+var paper10 = new Raphael('spinner10', 500, 500);
+var rect10 = paper10.rect(200, 50, 100, 100).attr({fill: '#ff9933', opacity: '.8'});
+var anim10 = Raphael.animation({transform: "r360"}, 4000).repeat(Infinity);
+rect10.animate(anim10);
+</script>
+            
+<div id="spinner11"></div>
+<script>
+var paper11 = new Raphael('spinner11', 500, 500);
+var rect11 = paper11.rect(200, 50, 150, 150).attr({fill: '#3399ff', opacity: '.8'});
+var anim11 = Raphael.animation({transform: "r360"}, 8000).repeat(Infinity);
+rect11.animate(anim11);
+</script>
+    
+<div id="spinner12"></div>
+<script>
+var paper12 = new Raphael('spinner12', 500, 500);
+var rect12 = paper12.rect(200, 50, 200, 200).attr({fill: '#339966', opacity: '.8'});
+var anim12 = Raphael.animation({transform: "r360"}, 10000).repeat(Infinity);
+rect12.animate(anim12);
+</script>
+    
+</body>
+</html>
