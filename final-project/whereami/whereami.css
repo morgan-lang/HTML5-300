@@ -1,0 +1,65 @@
+ html, body {
+        height: 100%;
+        margin: 10px;
+        padding: 0px;
+        background-color: white;
+      }
+
+h1 {
+        font-family: Roboto;
+        color: black;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 5px;
+        text-overflow: ellipsis;
+        width: 80%;
+    
+    
+}
+      #map {
+        height: 80%;
+        border: 2px solid gray;
+      }
+      .controls {
+        margin-top: 0px;
+        border: 2px solid #000000;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 40px;
+        width: 80%;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      }
+
+      #pac-input {
+        background-color: white;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: black;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: gray;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+      }
