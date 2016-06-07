@@ -1,17 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bike Seattle: Where am I?</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <link rel="stylesheet" href="whereami.css" media="all">
-  </head>
-  <body>
-      <h1>Bike Seattle: Where am I?</h1>
-    
-  </head>
-   <body>
-    <div id="map"></div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bike Seattle</title>
+  
+      <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/bike.css" rel="stylesheet">
+  <link rel="stylesheet" href="whereami.css" media="all">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Biking in Seattle</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="./whereami/index.html" target="_new">Where am I?</a>
+                    </li>
+                    <li>
+                        <a href="#">More stuff</a>
+                    </li>
+                    <li>
+                        <a href="#">Things too</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Bike Seattle
+                    <small>a guide to selected bike trails and routes in Seattle, Washington</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+      <div class="embed-responsive embed-responsive-4by3">
+<div id="map" class="embed-responsive-item"></div>
+        </div>
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
@@ -58,5 +123,23 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-A1H5amUyurncik_tsR6zGnwkr94p-7w&callback=initMap">
     </script>
-  </body>
+            
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Bike Seattle 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+
+</body>
+
 </html>

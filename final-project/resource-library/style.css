@@ -1,0 +1,46 @@
+td {
+  padding: 5px;
+
+}
+
+border-collapse: collapse;
+
+#addedsites {
+    border: 1px solid black;
+ 
+}
+
+#addedsitestr {
+    border: 1px solid black;
+   
+}
+#sitenametd {
+    border: 1px solid black;
+   
+}
+#sitedesctd {
+    border: 1px solid black;
+   
+}
+#urltd {
+    border: 1px solid black;
+   
+}
+
+
+
+
+#inputform {
+    background-color: aliceblue;
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#listofsites {
+    background-color: aliceblue;
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
